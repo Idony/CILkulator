@@ -46,14 +46,14 @@ namespace Calc
 
         private void additionButton_Click(object sender, EventArgs e)
         {
-            double result = Convert.ToDouble(firstArgument.Text) + Convert.ToDouble(secondArgument.Text);
-            resultField.Text = result.ToString();
+            Addition adder = new Addition();
+            resultField.Text = adder.Add(firstArgument.Text, secondArgument.Text);
         }
 
         private void substractionButton_Click(object sender, EventArgs e)
         {
-            double result = Convert.ToDouble(firstArgument.Text)- Convert.ToDouble(secondArgument.Text);
-            resultField.Text = result.ToString();
+            Addition adder = new Addition();
+            resultField.Text = adder.Add(firstArgument.Text, secondArgument.Text);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -62,3 +62,4 @@ namespace Calc
         }
     }
 }
+

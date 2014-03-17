@@ -145,6 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(714, 364);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.resultField);
@@ -157,7 +158,7 @@
             this.Controls.Add(this.multiplycationf);
             this.Controls.Add(this.firstArgument);
             this.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
