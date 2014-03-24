@@ -34,26 +34,26 @@ namespace Calc
 
         private void multiplycationf_Click(object sender, EventArgs e)
         {
-            double result = Convert.ToDouble(firstArgument.Text)*Convert.ToDouble(secondArgument.Text);
-            resultField.Text = result.ToString();
+            Multiplycator adder = new Multiplycator();
+            resultField.Text = adder.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
         }
 
         private void divisionButton_Click(object sender, EventArgs e)
         {
-            double result = Convert.ToDouble(firstArgument.Text) / Convert.ToDouble(secondArgument.Text);
-            resultField.Text = result.ToString();
+            Divider adder = new Divider();
+            resultField.Text = adder.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
         }
 
         private void additionButton_Click(object sender, EventArgs e)
         {
-            Addition adder = new Addition();
-            resultField.Text = adder.Add(firstArgument.Text, secondArgument.Text);
+            Adder adder = new Adder();
+            resultField.Text = adder.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
         }
 
         private void substractionButton_Click(object sender, EventArgs e)
         {
-            Addition adder = new Addition();
-            resultField.Text = adder.Add(firstArgument.Text, secondArgument.Text);
+            Adder adder = new Adder();
+            resultField.Text = adder.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
         }
 
         private void label3_Click(object sender, EventArgs e)

@@ -44,7 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Addition.cs" />
+    <Compile Include="Adder.cs" />
+    <Compile Include="Multiplycator.cs" />
+    <Compile Include="Substracter.cs" />
+    <Compile Include="Divider.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

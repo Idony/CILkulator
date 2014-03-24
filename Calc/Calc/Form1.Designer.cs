@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.firstArgument = new System.Windows.Forms.TextBox();
-            this.multiplycationf = new System.Windows.Forms.Button();
+            this.multiplycation = new System.Windows.Forms.Button();
             this.divisionButton = new System.Windows.Forms.Button();
             this.additionButton = new System.Windows.Forms.Button();
             this.substractionButton = new System.Windows.Forms.Button();
@@ -50,15 +50,15 @@
             this.firstArgument.TabIndex = 0;
             this.firstArgument.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // multiplycationf
+            // multiplycation
             // 
-            this.multiplycationf.Location = new System.Drawing.Point(324, 45);
-            this.multiplycationf.Name = "multiplycationf";
-            this.multiplycationf.Size = new System.Drawing.Size(31, 29);
-            this.multiplycationf.TabIndex = 1;
-            this.multiplycationf.Text = "*";
-            this.multiplycationf.UseVisualStyleBackColor = true;
-            this.multiplycationf.Click += new System.EventHandler(this.multiplycationf_Click);
+            this.multiplycation.Location = new System.Drawing.Point(324, 45);
+            this.multiplycation.Name = "multiplycation";
+            this.multiplycation.Size = new System.Drawing.Size(31, 29);
+            this.multiplycation.TabIndex = 1;
+            this.multiplycation.Text = "*";
+            this.multiplycation.UseVisualStyleBackColor = true;
+            this.multiplycation.Click += new System.EventHandler(this.multiplycationf_Click);
             // 
             // divisionButton
             // 
@@ -155,7 +155,7 @@
             this.Controls.Add(this.substractionButton);
             this.Controls.Add(this.additionButton);
             this.Controls.Add(this.divisionButton);
-            this.Controls.Add(this.multiplycationf);
+            this.Controls.Add(this.multiplycation);
             this.Controls.Add(this.firstArgument);
             this.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -169,7 +169,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox firstArgument;
-        private System.Windows.Forms.Button multiplycationf;
+        private System.Windows.Forms.Button multiplycation;
         private System.Windows.Forms.Button divisionButton;
         private System.Windows.Forms.Button additionButton;
         private System.Windows.Forms.Button substractionButton;
