@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Calc.BinaryCalculators;
 
 namespace Calc
 {
@@ -32,28 +33,30 @@ namespace Calc
 
         }
 
+        private void Calculate(string name)
+        {
+            IBinaryOperation calculator = BinaryOperationFactory.Create(name);
+            resultField.Text = calculator.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
+        }
+
         private void multiplycationf_Click(object sender, EventArgs e)
         {
-            Multiplycator adder = new Multiplycator();
-            resultField.Text = adder.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
+            Calculate("*");
         }
 
         private void divisionButton_Click(object sender, EventArgs e)
         {
-            Divider adder = new Divider();
-            resultField.Text = adder.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
+            Calculate("/");
         }
 
         private void additionButton_Click(object sender, EventArgs e)
         {
-            Adder adder = new Adder();
-            resultField.Text = adder.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
+            Calculate("+");
         }
 
         private void substractionButton_Click(object sender, EventArgs e)
         {
-            Adder adder = new Adder();
-            resultField.Text = adder.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
+            Calculate("-");
         }
 
         private void label3_Click(object sender, EventArgs e)

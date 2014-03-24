@@ -44,7 +44,7 @@
             // 
             // firstArgument
             // 
-            this.firstArgument.Location = new System.Drawing.Point(44, 50);
+            this.firstArgument.Location = new System.Drawing.Point(12, 9);
             this.firstArgument.Name = "firstArgument";
             this.firstArgument.Size = new System.Drawing.Size(260, 20);
             this.firstArgument.TabIndex = 0;
@@ -52,9 +52,9 @@
             // 
             // multiplycation
             // 
-            this.multiplycation.Location = new System.Drawing.Point(324, 45);
+            this.multiplycation.Location = new System.Drawing.Point(5, 164);
             this.multiplycation.Name = "multiplycation";
-            this.multiplycation.Size = new System.Drawing.Size(31, 29);
+            this.multiplycation.Size = new System.Drawing.Size(31, 84);
             this.multiplycation.TabIndex = 1;
             this.multiplycation.Text = "*";
             this.multiplycation.UseVisualStyleBackColor = true;
@@ -62,9 +62,9 @@
             // 
             // divisionButton
             // 
-            this.divisionButton.Location = new System.Drawing.Point(324, 77);
+            this.divisionButton.Location = new System.Drawing.Point(38, 164);
             this.divisionButton.Name = "divisionButton";
-            this.divisionButton.Size = new System.Drawing.Size(33, 29);
+            this.divisionButton.Size = new System.Drawing.Size(187, 84);
             this.divisionButton.TabIndex = 2;
             this.divisionButton.Text = "/";
             this.divisionButton.UseVisualStyleBackColor = true;
@@ -72,9 +72,9 @@
             // 
             // additionButton
             // 
-            this.additionButton.Location = new System.Drawing.Point(361, 77);
+            this.additionButton.Location = new System.Drawing.Point(203, 68);
             this.additionButton.Name = "additionButton";
-            this.additionButton.Size = new System.Drawing.Size(33, 29);
+            this.additionButton.Size = new System.Drawing.Size(22, 90);
             this.additionButton.TabIndex = 4;
             this.additionButton.Text = "+";
             this.additionButton.UseVisualStyleBackColor = true;
@@ -82,9 +82,9 @@
             // 
             // substractionButton
             // 
-            this.substractionButton.Location = new System.Drawing.Point(361, 45);
+            this.substractionButton.Location = new System.Drawing.Point(5, 68);
             this.substractionButton.Name = "substractionButton";
-            this.substractionButton.Size = new System.Drawing.Size(33, 29);
+            this.substractionButton.Size = new System.Drawing.Size(192, 90);
             this.substractionButton.TabIndex = 5;
             this.substractionButton.Text = "-";
             this.substractionButton.UseVisualStyleBackColor = true;
@@ -92,7 +92,7 @@
             // 
             // secondArgument
             // 
-            this.secondArgument.Location = new System.Drawing.Point(409, 50);
+            this.secondArgument.Location = new System.Drawing.Point(373, 12);
             this.secondArgument.Name = "secondArgument";
             this.secondArgument.Size = new System.Drawing.Size(260, 20);
             this.secondArgument.TabIndex = 6;
@@ -100,7 +100,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(140, 77);
+            this.label1.Location = new System.Drawing.Point(140, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 13);
             this.label1.TabIndex = 8;
@@ -109,7 +109,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(527, 77);
+            this.label2.Location = new System.Drawing.Point(491, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 9;
@@ -118,7 +118,7 @@
             // 
             // resultField
             // 
-            this.resultField.Location = new System.Drawing.Point(44, 149);
+            this.resultField.Location = new System.Drawing.Point(17, 268);
             this.resultField.Name = "resultField";
             this.resultField.ReadOnly = true;
             this.resultField.Size = new System.Drawing.Size(625, 20);
@@ -134,7 +134,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(321, 186);
+            this.label3.Location = new System.Drawing.Point(294, 305);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 11;
@@ -145,8 +145,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Red;
-            this.ClientSize = new System.Drawing.Size(714, 364);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::Calc.Properties.Resources.images;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(705, 395);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.resultField);
             this.Controls.Add(this.label2);
@@ -157,7 +159,7 @@
             this.Controls.Add(this.divisionButton);
             this.Controls.Add(this.multiplycation);
             this.Controls.Add(this.firstArgument);
-            this.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.Text = "Form1";

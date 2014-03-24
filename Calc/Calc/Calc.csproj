@@ -44,10 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adder.cs" />
-    <Compile Include="Multiplycator.cs" />
-    <Compile Include="Substracter.cs" />
-    <Compile Include="Divider.cs" />
+    <Compile Include="BinaryCalculators\Adder.cs" />
+    <Compile Include="BinaryCalculators\BinaryOperationFactory.cs" />
+    <Compile Include="BinaryCalculators\IBinaryOperation.cs" />
+    <Compile Include="BinaryCalculators\Multiplier.cs" />
+    <Compile Include="BinaryCalculators\Substracter.cs" />
+    <Compile Include="BinaryCalculators\Divider.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +86,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Koala.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

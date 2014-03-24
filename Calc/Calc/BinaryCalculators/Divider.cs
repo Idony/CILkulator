@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Calc
+﻿namespace Calc.BinaryCalculators
 {
-    public class Divider
+    public class Divider : IBinaryOperation
     {
         public double Calculation(double firstArgument, double secondArgument)
         {
