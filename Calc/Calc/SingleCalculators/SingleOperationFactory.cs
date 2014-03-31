@@ -12,8 +12,16 @@ namespace Calc.SingleCalculators
         {
             switch (calculatorName)
             {
-                case "":
-                   // return new Adder();
+                case "ln":
+                    return new Ln();
+                case "cubes":
+                    return new Cubed();
+                case "sin":
+                    return new Sin();
+                case "arccos":
+                    return new Arccos();
+                case "tan":
+                    return new Tan();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 

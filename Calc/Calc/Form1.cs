@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calc.BinaryCalculators;
+using Calc.SingleCalculators;
 
 namespace Calc
 {
@@ -35,10 +29,21 @@ namespace Calc
 
         private void Calculate(string name)
         {
-            IBinaryOperation calculator = BinaryOperationFactory.Create(name);
-            resultField.Text = calculator.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
+            if (!string.IsNullOrEmpty(firstArgument.Text.Trim()) && !string.IsNullOrEmpty(secondArgument.Text.Trim()))
+            {
+                IBinaryOperation calculator = BinaryOperationFactory.Create(name);
+                resultField.Text =calculator.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
+            }
         }
 
+        private void SCalculate(string name)
+        {
+             if (!string.IsNullOrEmpty(firstArgument.Text.Trim()))
+            {
+                ISingleOperation calculator = SingleOperationFactory.Create(name);
+                resultField.Text = calculator.Calculation(Convert.ToDouble(firstArgument.Text)).ToString();
+            }
+        }
         private void multiplycationf_Click(object sender, EventArgs e)
         {
             Calculate("*");
@@ -62,6 +67,36 @@ namespace Calc
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SCalculate("ln");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SCalculate("sin");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SCalculate("arccos");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SCalculate("cubes");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SCalculate("tan");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Calculate("pow");
         }
     }
 }
