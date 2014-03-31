@@ -40,6 +40,8 @@
             this.resultField = new System.Windows.Forms.TextBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label3 = new System.Windows.Forms.Label();
+            this.Square = new System.Windows.Forms.Button();
+            this.SqrtButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // firstArgument
@@ -139,7 +141,27 @@
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 11;
             this.label3.Text = "Результат";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.Click += new System.EventHandler(this.SquareClick);
+            // 
+            // Square
+            // 
+            this.Square.Location = new System.Drawing.Point(447, 68);
+            this.Square.Name = "Square";
+            this.Square.Size = new System.Drawing.Size(139, 37);
+            this.Square.TabIndex = 13;
+            this.Square.Text = "X^2";
+            this.Square.UseVisualStyleBackColor = true;
+            this.Square.Click += new System.EventHandler(this.SquareClick);
+            // 
+            // SqrtButton
+            // 
+            this.SqrtButton.Location = new System.Drawing.Point(334, 68);
+            this.SqrtButton.Name = "SqrtButton";
+            this.SqrtButton.Size = new System.Drawing.Size(75, 23);
+            this.SqrtButton.TabIndex = 14;
+            this.SqrtButton.Text = "Sqrt";
+            this.SqrtButton.UseVisualStyleBackColor = true;
+            this.SqrtButton.Click += new System.EventHandler(this.Sqrt);
             // 
             // Form1
             // 
@@ -149,6 +171,8 @@
             this.BackgroundImage = global::Calc.Properties.Resources.images;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(705, 395);
+            this.Controls.Add(this.SqrtButton);
+            this.Controls.Add(this.Square);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.resultField);
             this.Controls.Add(this.label2);
@@ -181,6 +205,9 @@
         private System.Windows.Forms.TextBox resultField;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button Square;
+        private System.Windows.Forms.Button SqrtButton;
+
     }
 }
 

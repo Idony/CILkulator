@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,8 +13,10 @@ namespace Calc.SingleCalculators
         {
             switch (calculatorName)
             {
-                case "":
-                   // return new Adder();
+                case "X^2":
+                   return new Square();
+                case "Sqrt":
+                   return new Sqrt();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 
