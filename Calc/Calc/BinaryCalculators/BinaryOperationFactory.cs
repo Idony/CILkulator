@@ -21,8 +21,6 @@ namespace Calc.BinaryCalculators
                     return new Divider();
                  case "*":
                     return new Multiplier();
-                 case "pow":
-                    return new Power();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 
