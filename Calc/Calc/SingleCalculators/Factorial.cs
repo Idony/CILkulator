@@ -1,6 +1,6 @@
-﻿namespace Calc.BinaryCalculators
+﻿namespace Calc.SingleCalculators
 {
-    public class Adder : IBinaryOperation
+    public class Factorial : ISingleOperation
     {
         public double Calculation(double firstArgument)
         {

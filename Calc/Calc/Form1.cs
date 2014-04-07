@@ -32,12 +32,12 @@ namespace Calc
         private void Calculate(string name)
         {
             IBinaryOperation calculator = BinaryOperationFactory.Create(name);
-            resultField.Text = calculator.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
+            if (firstArgument.Text != "" && secondArgument.Text!="") resultField.Text = calculator.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
         }
         private void SCalculate(string name)
         {
             ISingleOperation calculator = SingleOperationFactory.Create(name);
-            resultField.Text = calculator.Calculation(Convert.ToDouble(firstArgument.Text)).ToString();
+            if (firstArgument.Text != "") resultField.Text = calculator.Calculation(Convert.ToDouble(firstArgument.Text)).ToString();
         }
         private void multiplycationf_Click(object sender, EventArgs e)
         {
@@ -67,6 +67,32 @@ namespace Calc
         private void Sqrt(object sender, EventArgs e)
         {
             SCalculate("Sqrt");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Calculate("x^y");
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SCalculate("Ln");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SCalculate("Sin");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SCalculate("Tan");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SCalculate("n!");
         }
 
 

@@ -17,6 +17,18 @@ namespace Calc.SingleCalculators
                    return new Square();
                 case "Sqrt":
                    return new Sqrt();
+                case "Arccos":
+                    return new Arccos();
+                case "Tan":
+                    return new Tan();
+                case "Sin":
+                    return new Sin();
+                case "Ln":
+                    return new Ln();
+                case "x^3":
+                    return new Cubed();
+                case "n!":
+                    return new Factorial();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 
