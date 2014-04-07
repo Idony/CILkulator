@@ -95,6 +95,21 @@ namespace Calc
             SCalculate("n!");
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            SCalculate("X^3");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Calculate("x^(1/y)");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            SCalculate("Sqrt3");
+        }
+
 
 
 

@@ -29,6 +29,10 @@ namespace Calc.SingleCalculators
                     return new Cubed();
                 case "n!":
                     return new Factorial();
+                case "X^3":
+                    return new Cubed();
+                case "Sqrt3":
+                    return new Sqrt3();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 

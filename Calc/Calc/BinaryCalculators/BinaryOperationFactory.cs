@@ -23,6 +23,8 @@ namespace Calc.BinaryCalculators
                     return new Multiplier();
                  case "x^y":
                     return new Power();
+                 case "x^(1/y)":
+                    return new PowerSqrt();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 

@@ -47,6 +47,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // firstArgument
@@ -59,9 +62,9 @@
             // 
             // multiplycation
             // 
-            this.multiplycation.Location = new System.Drawing.Point(5, 164);
+            this.multiplycation.Location = new System.Drawing.Point(10, 61);
             this.multiplycation.Name = "multiplycation";
-            this.multiplycation.Size = new System.Drawing.Size(31, 84);
+            this.multiplycation.Size = new System.Drawing.Size(22, 84);
             this.multiplycation.TabIndex = 1;
             this.multiplycation.Text = "*";
             this.multiplycation.UseVisualStyleBackColor = true;
@@ -69,9 +72,9 @@
             // 
             // divisionButton
             // 
-            this.divisionButton.Location = new System.Drawing.Point(38, 164);
+            this.divisionButton.Location = new System.Drawing.Point(38, 106);
             this.divisionButton.Name = "divisionButton";
-            this.divisionButton.Size = new System.Drawing.Size(187, 84);
+            this.divisionButton.Size = new System.Drawing.Size(75, 38);
             this.divisionButton.TabIndex = 2;
             this.divisionButton.Text = "/";
             this.divisionButton.UseVisualStyleBackColor = true;
@@ -79,9 +82,9 @@
             // 
             // additionButton
             // 
-            this.additionButton.Location = new System.Drawing.Point(203, 68);
+            this.additionButton.Location = new System.Drawing.Point(119, 61);
             this.additionButton.Name = "additionButton";
-            this.additionButton.Size = new System.Drawing.Size(22, 90);
+            this.additionButton.Size = new System.Drawing.Size(22, 83);
             this.additionButton.TabIndex = 4;
             this.additionButton.Text = "+";
             this.additionButton.UseVisualStyleBackColor = true;
@@ -89,9 +92,9 @@
             // 
             // substractionButton
             // 
-            this.substractionButton.Location = new System.Drawing.Point(5, 68);
+            this.substractionButton.Location = new System.Drawing.Point(38, 61);
             this.substractionButton.Name = "substractionButton";
-            this.substractionButton.Size = new System.Drawing.Size(192, 90);
+            this.substractionButton.Size = new System.Drawing.Size(75, 38);
             this.substractionButton.TabIndex = 5;
             this.substractionButton.Text = "-";
             this.substractionButton.UseVisualStyleBackColor = true;
@@ -125,7 +128,7 @@
             // 
             // resultField
             // 
-            this.resultField.Location = new System.Drawing.Point(17, 268);
+            this.resultField.Location = new System.Drawing.Point(38, 331);
             this.resultField.Name = "resultField";
             this.resultField.ReadOnly = true;
             this.resultField.Size = new System.Drawing.Size(625, 20);
@@ -141,7 +144,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(294, 305);
+            this.label3.Location = new System.Drawing.Point(315, 368);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 11;
@@ -150,9 +153,9 @@
             // 
             // Square
             // 
-            this.Square.Location = new System.Drawing.Point(447, 68);
+            this.Square.Location = new System.Drawing.Point(562, 195);
             this.Square.Name = "Square";
-            this.Square.Size = new System.Drawing.Size(139, 37);
+            this.Square.Size = new System.Drawing.Size(75, 23);
             this.Square.TabIndex = 13;
             this.Square.Text = "X^2";
             this.Square.UseVisualStyleBackColor = true;
@@ -160,7 +163,7 @@
             // 
             // SqrtButton
             // 
-            this.SqrtButton.Location = new System.Drawing.Point(334, 68);
+            this.SqrtButton.Location = new System.Drawing.Point(481, 69);
             this.SqrtButton.Name = "SqrtButton";
             this.SqrtButton.Size = new System.Drawing.Size(75, 23);
             this.SqrtButton.TabIndex = 14;
@@ -170,7 +173,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(278, 102);
+            this.button1.Location = new System.Drawing.Point(481, 103);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 15;
@@ -180,7 +183,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(278, 134);
+            this.button2.Location = new System.Drawing.Point(481, 135);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 16;
@@ -190,7 +193,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(278, 164);
+            this.button3.Location = new System.Drawing.Point(481, 165);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 17;
@@ -200,7 +203,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(278, 194);
+            this.button4.Location = new System.Drawing.Point(481, 195);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 18;
@@ -210,13 +213,43 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(460, 164);
+            this.button5.Location = new System.Drawing.Point(562, 69);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 19;
             this.button5.Text = "n!";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(562, 98);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 20;
+            this.button6.Text = "X^3";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(562, 135);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 21;
+            this.button7.Text = "X^(1/Y)";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(562, 165);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 22;
+            this.button8.Text = "Sqrt^3";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Form1
             // 
@@ -226,6 +259,9 @@
             this.BackgroundImage = global::Calc.Properties.Resources.images;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(705, 395);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -272,6 +308,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
 
     }
 }
