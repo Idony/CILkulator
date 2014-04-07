@@ -110,6 +110,16 @@ namespace Calc
             SCalculate("Sqrt3");
         }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Calculate("Log");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Calculate("%");
+        }
+
 
 
 

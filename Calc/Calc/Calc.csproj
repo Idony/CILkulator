@@ -65,6 +65,8 @@
     <Compile Include="SingleCalculators\Factorial.cs" />
     <Compile Include="SingleCalculators\ISingleOperation.cs" />
     <Compile Include="SingleCalculators\ln.cs" />
+    <Compile Include="BinaryCalculators\Log.cs" />
+    <Compile Include="BinaryCalculators\Modulo.cs" />
     <Compile Include="SingleCalculators\Sin.cs" />
     <Compile Include="SingleCalculators\SingleOperationFactory.cs" />
     <Compile Include="SingleCalculators\Sqrt.cs" />

@@ -25,6 +25,11 @@ namespace Calc.BinaryCalculators
                     return new Power();
                  case "x^(1/y)":
                     return new PowerSqrt();
+                 case "Log":
+                    return new Log();
+                 case "%":
+                    return new Modilo();
+
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 
