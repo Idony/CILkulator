@@ -12,8 +12,8 @@ namespace Calc.SingleCalculators
         {
             switch (calculatorName)
             {
-                case "":
-                   // return new Adder();
+                case "!":
+                    return new Adder();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 

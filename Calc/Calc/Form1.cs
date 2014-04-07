@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calc.BinaryCalculators;
+using Calc.SingleCalculators;
 
 namespace Calc
 {
@@ -39,6 +40,11 @@ namespace Calc
             resultField.Text = calculator.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
         }
 
+        private void SCalculate(string name)
+        {
+            ISingleOperation calculator = SingleOperationFactory.Create(name);
+            resultField.Text = calculator.Calculation(Convert.ToDouble(firstArgument.Text)).ToString();
+        }
         private void multiplycationf_Click(object sender, EventArgs e)
         {
             Calculate("*");
@@ -60,6 +66,26 @@ namespace Calc
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Factorial(object sender, EventArgs e)
         {
 
         }
