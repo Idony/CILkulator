@@ -33,6 +33,8 @@ namespace Calc.SingleCalculators
                     return new Cubed();
                 case "Sqrt3":
                     return new Sqrt3();
+                case "lg":
+                    return new lg();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 

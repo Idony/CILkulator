@@ -125,6 +125,11 @@ namespace Calc
             Calculate("EXP");
         }
 
+        private void button12_Click(object sender, EventArgs e)
+        {
+            SCalculate("lg");
+        }
+
 
 
 
