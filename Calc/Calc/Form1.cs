@@ -135,6 +135,11 @@ namespace Calc
             SCalculate("arctg");
         }
 
+        private void button14_Click(object sender, EventArgs e)
+        {
+            SCalculate("arcsin");
+        }
+
 
 
 

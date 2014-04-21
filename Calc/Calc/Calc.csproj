@@ -62,7 +62,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SingleCalculators\Arccos.cs" />
-    <Compile Include="SingleCalculators\Class1.cs" />
+    <Compile Include="SingleCalculators\arctg.cs" />
+    <Compile Include="SingleCalculators\arcsin.cs" />
     <Compile Include="SingleCalculators\Cubed.cs" />
     <Compile Include="SingleCalculators\Factorial.cs" />
     <Compile Include="SingleCalculators\ISingleOperation.cs" />
