@@ -29,6 +29,8 @@ namespace Calc.BinaryCalculators
                     return new Log();
                  case "%":
                     return new Modilo();
+                 case "EXP":
+                    return new Exp();
 
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");

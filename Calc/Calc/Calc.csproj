@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="BinaryCalculators\Adder.cs" />
     <Compile Include="BinaryCalculators\BinaryOperationFactory.cs" />
+    <Compile Include="BinaryCalculators\Exp.cs" />
     <Compile Include="BinaryCalculators\IBinaryOperation.cs" />
     <Compile Include="BinaryCalculators\Multiplier.cs" />
     <Compile Include="BinaryCalculators\Power.cs" />
