@@ -35,6 +35,8 @@ namespace Calc.SingleCalculators
                     return new Sqrt3();
                 case "lg":
                     return new lg();
+                case "arctg":
+                    return new arctg();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 
