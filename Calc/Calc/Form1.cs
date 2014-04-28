@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calc.BinaryCalculators;
 using Calc.SingleCalculators;
+using Microsoft.Win32;
 
 namespace Calc
 {
@@ -29,120 +30,122 @@ namespace Calc
 
         }
 
-        private void Calculate(string name)
+        private void Calculate(object sender, EventArgs e)
         {
-            IBinaryOperation calculator = BinaryOperationFactory.Create(name);
+
+            IBinaryOperation calculator = BinaryOperationFactory.Create(((Button)sender).Text);
             if (firstArgument.Text != "" && secondArgument.Text!="") resultField.Text = calculator.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
         }
-        private void SCalculate(string name)
+        private void SCalculate(object sender, EventArgs e)
         {
-            ISingleOperation calculator = SingleOperationFactory.Create(name);
+            ISingleOperation calculator = SingleOperationFactory.Create(((Button)sender).Text);
             if (firstArgument.Text != "") resultField.Text = calculator.Calculation(Convert.ToDouble(firstArgument.Text)).ToString();
         }
+       
         private void multiplycationf_Click(object sender, EventArgs e)
         {
-            Calculate("*");
+         //   Calculate("*");
         }
 
         private void divisionButton_Click(object sender, EventArgs e)
         {
-            Calculate("/");
+           // Calculate("/");
         }
 
         private void additionButton_Click(object sender, EventArgs e)
         {
-            Calculate("+");
+           // Calculate("+");
         }
 
         private void substractionButton_Click(object sender, EventArgs e)
         {
-            Calculate("-");
+           // Calculate("-");
         }
 
         private void SquareClick(object sender, EventArgs e)
         {
-            SCalculate("X^2");
+//SCalculate("x^2");
         }
 
         private void Sqrt(object sender, EventArgs e)
         {
-            SCalculate("Sqrt");
+           // SCalculate("sqrt");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Calculate("x^y");
+            //Calculate("x^y");
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SCalculate("Ln");
+           // SCalculate("ln");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            SCalculate("Sin");
+          //  SCalculate("sin");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            SCalculate("Tan");
+           // SCalculate("tan");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            SCalculate("n!");
+           // SCalculate("n!");
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            SCalculate("X^3");
+           // SCalculate("x^3");
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Calculate("x^(1/y)");
+          //  Calculate("x^(1/y)");
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            SCalculate("Sqrt3");
+          //  SCalculate("sqrt3");
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Calculate("Log");
+            //Calculate("log");
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            Calculate("%");
+           // Calculate("mod");
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            Calculate("EXP");
+          //  Calculate("exp");
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            SCalculate("lg");
+            //SCalculate("lg");
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            SCalculate("arctg");
+           // SCalculate("arctg");
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            SCalculate("arcsin");
+            //SCalculate("arcsin");
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            SCalculate("ctg");
+          //  SCalculate("ctg");
         }
 
 

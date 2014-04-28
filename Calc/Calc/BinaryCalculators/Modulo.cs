@@ -6,7 +6,7 @@ namespace Calc.BinaryCalculators
     {
         public double Calculation(double firstArgument, double secondArgument)
         {
-            double result = firstArgument / secondArgument - (int)(firstArgument / secondArgument);
+            double result =( firstArgument / secondArgument - (int)(firstArgument / secondArgument))*secondArgument;
             return result;
         }
     }

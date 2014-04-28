@@ -25,11 +25,11 @@ namespace Calc.BinaryCalculators
                     return new Power();
                  case "x^(1/y)":
                     return new PowerSqrt();
-                 case "Log":
+                 case "log":
                     return new Log();
-                 case "%":
+                 case "mod":
                     return new Modilo();
-                 case "EXP":
+                 case "exp":
                     return new Exp();
 
                 default:

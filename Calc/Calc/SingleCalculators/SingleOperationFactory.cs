@@ -13,25 +13,23 @@ namespace Calc.SingleCalculators
         {
             switch (calculatorName)
             {
-                case "X^2":
+                case "x^2":
                    return new Square();
-                case "Sqrt":
+                case "sqrt":
                    return new Sqrt();
-                case "Arccos":
+                case "arccos":
                     return new Arccos();
-                case "Tan":
+                case "tan":
                     return new Tan();
-                case "Sin":
+                case "sin":
                     return new Sin();
-                case "Ln":
+                case "ln":
                     return new Ln();
                 case "x^3":
                     return new Cubed();
                 case "n!":
                     return new Factorial();
-                case "X^3":
-                    return new Cubed();
-                case "Sqrt3":
+                case "sqrt^3":
                     return new Sqrt3();
                 case "lg":
                     return new lg();
