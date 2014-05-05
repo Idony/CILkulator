@@ -75,7 +75,7 @@
             this.multiplycation.TabIndex = 1;
             this.multiplycation.Text = "*";
             this.multiplycation.UseVisualStyleBackColor = true;
-            this.multiplycation.Click += new System.EventHandler(this.multiplycationf_Click);
+            this.multiplycation.Click += new System.EventHandler(this.Calculate);
             // 
             // divisionButton
             // 
@@ -85,7 +85,7 @@
             this.divisionButton.TabIndex = 2;
             this.divisionButton.Text = "/";
             this.divisionButton.UseVisualStyleBackColor = true;
-            this.divisionButton.Click += new System.EventHandler(this.divisionButton_Click);
+            this.divisionButton.Click += new System.EventHandler(this.Calculate);
             // 
             // additionButton
             // 
@@ -95,7 +95,7 @@
             this.additionButton.TabIndex = 4;
             this.additionButton.Text = "+";
             this.additionButton.UseVisualStyleBackColor = true;
-            this.additionButton.Click += new System.EventHandler(this.additionButton_Click);
+            this.additionButton.Click += new System.EventHandler(this.Calculate);
             // 
             // substractionButton
             // 
@@ -105,7 +105,7 @@
             this.substractionButton.TabIndex = 5;
             this.substractionButton.Text = "-";
             this.substractionButton.UseVisualStyleBackColor = true;
-            this.substractionButton.Click += new System.EventHandler(this.substractionButton_Click);
+            this.substractionButton.Click += new System.EventHandler(this.Calculate);
             // 
             // secondArgument
             // 
