@@ -39,6 +39,8 @@ namespace Calc.SingleCalculators
                     return new arcsin();
                 case "ctg":
                     return new ctg();
+                case "arcctg":
+                    return new arcctg();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 

@@ -65,7 +65,6 @@
             this.firstArgument.Name = "firstArgument";
             this.firstArgument.Size = new System.Drawing.Size(260, 20);
             this.firstArgument.TabIndex = 0;
-            this.firstArgument.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // multiplycation
             // 
