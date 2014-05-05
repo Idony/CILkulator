@@ -41,7 +41,11 @@ namespace Calc
             ISingleOperation calculator = SingleOperationFactory.Create(((Button)sender).Text);
             if (firstArgument.Text != "") resultField.Text = calculator.Calculation(Convert.ToDouble(firstArgument.Text)).ToString();
         }
-
+ private void SortCalculate(object sender, EventArgs e)
+        {
+            ISort sort = SortOperationFactory.Create(((Button)sender).Text);
+            resultField.Text = sort.Sort(firstArgument.Text);
+        }
     }
 }
 
