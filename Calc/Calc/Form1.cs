@@ -148,6 +148,11 @@ namespace Calc
           //  SCalculate("ctg");
         }
 
+        private void button16_Click(object sender, EventArgs e)
+        {
+            //  SCalculate("arcctg");
+        }
+
 
 
 
