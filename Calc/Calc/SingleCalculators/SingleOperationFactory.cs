@@ -41,6 +41,8 @@ namespace Calc.SingleCalculators
                     return new ctg();
                 case "arcctg":
                     return new arcctg();
+                case "Arccos":
+                    return new Arccos();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 
