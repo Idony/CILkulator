@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calc.BinaryCalculators;
 using Calc.SingleCalculators;
+using Calc.Sorts;
 using Microsoft.Win32;
 
 namespace Calc
