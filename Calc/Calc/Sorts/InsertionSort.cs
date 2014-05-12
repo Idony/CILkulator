@@ -10,8 +10,6 @@ namespace Calc.Sorts
         {
             List<string> perList=firstArgument.Split(' ').ToList();
             List<int> per = perList.Select(l => Convert.ToInt32(l)).ToList();
-            int counter = 0;
-
             for (int i = 1; i < per.Count; i++)
                 for (int j = i; j > 0 && per[j - 1] > per[j]; j--) // пока j>0 и элемент j-1 > j, x-массив int
                 {

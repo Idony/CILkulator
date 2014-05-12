@@ -43,6 +43,12 @@ namespace Calc.SingleCalculators
                     return new arcctg();
                 case "Arccos":
                     return new Arccos();
+                case "1/x":
+                    return new delx();
+                case "cos":
+                    return new cos();
+                case "+/-":
+                    return new swap();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 

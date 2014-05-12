@@ -53,12 +53,16 @@
     <Compile Include="BinaryCalculators\Substracter.cs" />
     <Compile Include="BinaryCalculators\Divider.cs" />
     <Compile Include="BinaryCalculators\PowerSqrt.cs" />
+    <Compile Include="BinaryCalculators\Xi.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="SingleCalculators\delx.cs" />
+    <Compile Include="SingleCalculators\cos.cs" />
+    <Compile Include="SingleCalculators\swap.cs" />
     <Compile Include="Sorts\ISort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

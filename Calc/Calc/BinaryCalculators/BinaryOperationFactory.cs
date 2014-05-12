@@ -31,7 +31,8 @@ namespace Calc.BinaryCalculators
                     return new Modilo();
                  case "exp":
                     return new Exp();
-
+                 case "Xi":
+                    return new Xi();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 
