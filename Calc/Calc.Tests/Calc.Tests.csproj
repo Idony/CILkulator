@@ -59,6 +59,9 @@
     <Compile Include="SingleCalculators\CtgTests.cs" />
     <Compile Include="SingleCalculators\FactorialTests.cs" />
     <Compile Include="SingleCalculators\LgTests.cs" />
+    <Compile Include="Sort\PozyrekTest.cs" />
+    <Compile Include="Sort\QsortTest.cs" />
+    <Compile Include="Sort\InsertionSortTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
