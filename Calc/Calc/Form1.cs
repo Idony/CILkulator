@@ -45,7 +45,11 @@ namespace Calc
  private void SortCalculate(object sender, EventArgs e)
         {
             ISort sort = SortOperationFactory.Create(((Button)sender).Text);
-            resultField.Text = sort.Sort(firstArgument.Text);
+            List<string> perList = (firstArgument.Text).Split(' ').ToList();
+            List<int> per = perList.Select(l => Convert.ToInt32(l)).ToList();
+            sort.Sort(per);
+            resultField.Text = string.Join(" ", per);
+                
         }
     }
 }

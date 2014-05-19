@@ -1,7 +1,9 @@
-﻿namespace Calc.Sorts
+﻿using System.Collections.Generic;
+
+namespace Calc.Sorts
 {
     public interface ISort
     {
-        string Sort(string firstArgument); 
+        List<int> Sort(List<int> per); 
     }
 }

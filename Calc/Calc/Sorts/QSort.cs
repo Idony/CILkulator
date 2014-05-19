@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace Calc.Sorts
 {
     public class QSort : ISort
     {
-        public string Sort(string firstArgument)
+        public List<int> Sort(List<int> a)
         {
-            List<string> perList=firstArgument.Split(' ').ToList();
-            List<int> per = perList.Select(l => Convert.ToInt32(l)).ToList();
-            per.Sort();
-            return string.Join(" ", per);
+            a.Sort();
+            return a;
         }
     }
 }
