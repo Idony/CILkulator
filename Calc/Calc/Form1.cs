@@ -51,6 +51,8 @@ namespace Calc
             resultField.Text = string.Join(" ", per);
                 
         }
+
+
     }
 }
 
