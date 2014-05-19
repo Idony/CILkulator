@@ -54,6 +54,7 @@
     <Compile Include="BinaryCalculators\Divider.cs" />
     <Compile Include="BinaryCalculators\PowerSqrt.cs" />
     <Compile Include="BinaryCalculators\Xi.cs" />
+    <Compile Include="BinaryCalculators\Srhombus.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
