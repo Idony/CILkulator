@@ -65,11 +65,8 @@
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.button24 = new System.Windows.Forms.Button();
-=======
-            this.button24_ = new System.Windows.Forms.Button();
->>>>>>> 8344a401e2e3665651de661d9bf90e0df0a2fe35
+            this.button25 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // firstArgument
@@ -419,27 +416,25 @@
             this.button23.UseVisualStyleBackColor = true;
             this.button23.Click += new System.EventHandler(this.Calculate);
             // 
-<<<<<<< HEAD
             // button24
             // 
-            this.button24.Location = new System.Drawing.Point(563, 106);
+            this.button24.Location = new System.Drawing.Point(83, 280);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(75, 23);
             this.button24.TabIndex = 38;
-            this.button24.Text = "SRhombus";
+            this.button24.Text = "SelectionSort";
             this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.Calculate);
-=======
-            // button24_
+            this.button24.Click += new System.EventHandler(this.SortCalculate);
             // 
-            this.button24_.Location = new System.Drawing.Point(481, 69);
-            this.button24_.Name = "button24_";
-            this.button24_.Size = new System.Drawing.Size(75, 23);
-            this.button24_.TabIndex = 38;
-            this.button24_.Text = "arcctg";
-            this.button24_.UseVisualStyleBackColor = true;
-            this.button24_.Click += new System.EventHandler(this.SCalculate);
->>>>>>> 8344a401e2e3665651de661d9bf90e0df0a2fe35
+            // button25
+            // 
+            this.button25.Location = new System.Drawing.Point(238, 69);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(75, 23);
+            this.button25.TabIndex = 39;
+            this.button25.Text = "arcctg";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.SCalculate);
             // 
             // Form1
             // 
@@ -449,11 +444,8 @@
             this.BackgroundImage = global::Calc.Properties.Resources.images;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(705, 395);
-<<<<<<< HEAD
+            this.Controls.Add(this.button25);
             this.Controls.Add(this.button24);
-=======
-            this.Controls.Add(this.button24_);
->>>>>>> 8344a401e2e3665651de661d9bf90e0df0a2fe35
             this.Controls.Add(this.button23);
             this.Controls.Add(this.button22);
             this.Controls.Add(this.button21);
@@ -536,11 +528,9 @@
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button23;
-<<<<<<< HEAD
         private System.Windows.Forms.Button button24;
-=======
-        private System.Windows.Forms.Button button24_;
->>>>>>> 8344a401e2e3665651de661d9bf90e0df0a2fe35
+        private System.Windows.Forms.Button button25;
+
 
     }
 }

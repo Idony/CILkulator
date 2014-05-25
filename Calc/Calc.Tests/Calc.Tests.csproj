@@ -71,6 +71,7 @@
     <Compile Include="Sort\PozyrekTest.cs" />
     <Compile Include="Sort\QsortTest.cs" />
     <Compile Include="Sort\InsertionSortTest.cs" />
+    <Compile Include="Sort\SelectionTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

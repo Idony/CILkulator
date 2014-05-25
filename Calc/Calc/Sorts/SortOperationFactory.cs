@@ -14,6 +14,8 @@ namespace Calc.Sorts
                     return new InsertionSort();
                 case "Pozyrek":
                     return new Pozyrek();
+                case "SelectionSort":
+                    return new SelectionSort();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 

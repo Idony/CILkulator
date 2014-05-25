@@ -88,7 +88,7 @@
     <Compile Include="SingleCalculators\Tan.cs" />
     <Compile Include="Sorts\SortOperationFactory.cs" />
     <Compile Include="Sorts\InsertionSort.cs" />
-    <Compile Include="Sorts\Hariok.cs" />
+    <Compile Include="Sorts\SelectionSort.cs" />
     <Compile Include="Sorts\Pozyrek.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
