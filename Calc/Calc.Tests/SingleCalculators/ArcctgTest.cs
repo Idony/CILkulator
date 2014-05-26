@@ -22,8 +22,8 @@ namespace Calc.Tests.SingleCalculators
         public void ArcctgTest2()
         {
             ISingleOperation calc = SingleOperationFactory.Create("arcctg");
-            double result = calc.Calculation(1);
-            Assert.AreEqual(result, Math.PI / 2 - Math.Atan(1));
+            double result = calc.Calculation(2);
+            Assert.AreEqual(result, Math.PI / 2 - Math.Atan(2));
         }
     }
 }

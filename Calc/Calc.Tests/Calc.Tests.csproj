@@ -54,7 +54,7 @@
     <Compile Include="BinaryCalculators\S.cs" />
     <Compile Include="BinaryCalculators\Копия S.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SingleCalculators\Arccos.cs" />
+    <Compile Include="SingleCalculators\ArccosTest.cs" />
     <Compile Include="SingleCalculators\ArcctgTest.cs" />
     <Compile Include="SingleCalculators\CosinusTest.cs" />
     <Compile Include="SingleCalculators\SinusTest.cs" />
