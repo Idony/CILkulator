@@ -41,8 +41,6 @@ namespace Calc.SingleCalculators
                     return new ctg();
                 case "arcctg":
                     return new arcctg();
-                case "Arccos":
-                    return new Arccos();
                 case "1/x":
                     return new delx();
                 case "cos":

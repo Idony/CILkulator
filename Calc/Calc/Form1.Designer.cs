@@ -67,6 +67,7 @@
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // firstArgument
@@ -342,7 +343,7 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(75, 23);
             this.button16.TabIndex = 30;
-            this.button16.Text = "Arccos";
+            this.button16.Text = "arccos";
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.SCalculate);
             // 
@@ -412,7 +413,7 @@
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(75, 23);
             this.button23.TabIndex = 37;
-            this.button23.Text = "Rank";
+            this.button23.Text = "rank";
             this.button23.UseVisualStyleBackColor = true;
             this.button23.Click += new System.EventHandler(this.Calculate);
             // 
@@ -436,6 +437,16 @@
             this.button25.UseVisualStyleBackColor = true;
             this.button25.Click += new System.EventHandler(this.SCalculate);
             // 
+            // button26
+            // 
+            this.button26.Location = new System.Drawing.Point(563, 103);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(75, 23);
+            this.button26.TabIndex = 40;
+            this.button26.Text = "srhombus";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.Calculate);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -444,6 +455,7 @@
             this.BackgroundImage = global::Calc.Properties.Resources.images;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(705, 395);
+            this.Controls.Add(this.button26);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.button24);
             this.Controls.Add(this.button23);
@@ -530,6 +542,7 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button26;
 
 
     }

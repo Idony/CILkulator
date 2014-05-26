@@ -9,21 +9,21 @@ using NUnit.Framework;
 namespace Calc.Tests.SingleCalculators
 {
     [TestFixture]
-    public class SquareTests
+    public class CubedTests
     {
         [Test]
-        public void SquareTest1()
+        public void CubedTest1()
         {
-            ISingleOperation calc = SingleOperationFactory.Create("x^2");
+            ISingleOperation calc = SingleOperationFactory.Create("x^3");
             double result = calc.Calculation(2);
-            Assert.AreEqual(result,4);
+            Assert.AreEqual(result, 8);
         }
         [Test]
-        public void SquareTest2()
+        public void CubedTest2()
         {
-            ISingleOperation calc = SingleOperationFactory.Create("x^2");
+            ISingleOperation calc = SingleOperationFactory.Create("x^3");
             double result = calc.Calculation(3);
-            Assert.AreEqual(9, result);
+            Assert.AreEqual(27, result);
         }
     }
 }

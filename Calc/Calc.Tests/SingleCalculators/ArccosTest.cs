@@ -14,14 +14,14 @@ namespace Calc.Tests.SingleCalculators
         [Test]
         public void ArcsinTest1()
         {
-            ISingleOperation calc = SingleOperationFactory.Create("Arccos");
+            ISingleOperation calc = SingleOperationFactory.Create("arccos");
             double result = calc.Calculation(0.5);
             Assert.AreEqual(result, Math.Acos(0.5));
         }
         [Test]
         public void ArccosTest2()
         {
-            ISingleOperation calc = SingleOperationFactory.Create("Arccos");
+            ISingleOperation calc = SingleOperationFactory.Create("arccos");
             double result = calc.Calculation(0.3);
             Assert.AreEqual(result, Math.Acos(0.3));
         }
