@@ -33,24 +33,58 @@ namespace Calc
 
         private void Calculate(object sender, EventArgs e)
         {
+            double DoubleFirstArgument = Convert.ToDouble(firstArgument.Text),
+                DoubleSecondArgument = Convert.ToDouble(secondArgument.Text);
+            try
+            {
+                IBinaryOperation calculator = BinaryOperationFactory.Create(((Button) sender).Text);
+                if (firstArgument.Text != "" && secondArgument.Text != "")
+                {
+                    resultField.Text =
+                        calculator.Calculation(DoubleFirstArgument,
+                            DoubleSecondArgument).ToString();
+                }
+            }
+            catch (Exception exception)
+            {
+                resultField.Text = exception.Message;
+            }
+            
+        }
 
-            IBinaryOperation calculator = BinaryOperationFactory.Create(((Button)sender).Text);
-            if (firstArgument.Text != "" && secondArgument.Text!="") resultField.Text = calculator.Calculation(Convert.ToDouble(firstArgument.Text), Convert.ToDouble(secondArgument.Text)).ToString();
-        }
-        private void SCalculate(object sender, EventArgs e)
+        private void SimpleCalculate(object sender, EventArgs e)
         {
-            ISingleOperation calculator = SingleOperationFactory.Create(((Button)sender).Text);
-            if (firstArgument.Text != "") resultField.Text = calculator.Calculation(Convert.ToDouble(firstArgument.Text)).ToString();
+            double DoubleFirstArgument = Convert.ToDouble(firstArgument.Text);
+            try
+            {
+                ISingleOperation calculator = SingleOperationFactory.Create(((Button) sender).Text);
+                if (firstArgument.Text != "")
+                    resultField.Text = calculator.Calculation(DoubleFirstArgument).ToString();
+            }
+            catch (Exception exception)
+            {
+                resultField.Text = exception.Message;
+            }
         }
- private void SortCalculate(object sender, EventArgs e)
+
+        private void SortCalculate(object sender, EventArgs e)
         {
-            ISort sort = SortOperationFactory.Create(((Button)sender).Text);
-            List<string> perList = (firstArgument.Text).Split(' ').ToList();
-            List<int> per = perList.Select(l => Convert.ToInt32(l)).ToList();
-            sort.Sort(per);
-            resultField.Text = string.Join(" ", per);
-                
+            try
+            {
+                ISort sort = SortOperationFactory.Create(((Button) sender).Text);
+                List<string> perList = (firstArgument.Text).Split(' ').ToList();
+                List<int> per = perList.Select(l => Convert.ToInt32(l)).ToList();
+                sort.Sort(per);
+                resultField.Text = string.Join(" ", per);
+            }
+            catch (Exception exception)
+            {
+                resultField.Text = exception.Message;
+            }
+
         }
+
+        
 
 
     }

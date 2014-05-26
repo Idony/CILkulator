@@ -5,6 +5,7 @@ namespace Calc.BinaryCalculators
     {
         public double Calculation(double firstArgument, double secondArgument)
         {
+
             double result = firstArgument ;
             for (; secondArgument > 0; secondArgument--)
                 result*=10;

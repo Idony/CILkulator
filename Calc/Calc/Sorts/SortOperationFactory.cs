@@ -8,7 +8,7 @@ namespace Calc.Sorts
         {
             switch (calculatorName)
             {
-                case "qsort":
+                case "Qsort":
                     return new QSort();
                 case "InsertionSort":
                     return new InsertionSort();

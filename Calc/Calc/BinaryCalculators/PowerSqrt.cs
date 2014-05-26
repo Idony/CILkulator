@@ -10,6 +10,10 @@ namespace Calc.BinaryCalculators
     {
         public double Calculation(double firstArgument, double secondArgument)
         {
+            if (secondArgument !=0)
+            {
+                throw new ArgumentException("Ошибка вводимых данных", "secondArgument");
+            }
             double result = Math.Pow( firstArgument,1.0/secondArgument);
             return result;
         }
