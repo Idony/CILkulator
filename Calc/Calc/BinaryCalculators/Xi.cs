@@ -6,7 +6,7 @@ namespace Calc.BinaryCalculators
     {
         public double Calculation(double firstArgument, double secondArgument)
         {
-            if (firstArgument.ToString().Length > secondArgument)
+            if (firstArgument.ToString().Length < secondArgument)
             {
                 throw new ArgumentException("Ошибка вводимых данных", "firstArgument and secondArgument");
             }

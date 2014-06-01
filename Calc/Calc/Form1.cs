@@ -33,13 +33,14 @@ namespace Calc
 
         private void Calculate(object sender, EventArgs e)
         {
-            double DoubleFirstArgument = Convert.ToDouble(firstArgument.Text),
-                DoubleSecondArgument = Convert.ToDouble(secondArgument.Text);
+           
             try
             {
                 IBinaryOperation calculator = BinaryOperationFactory.Create(((Button) sender).Text);
                 if (firstArgument.Text != "" && secondArgument.Text != "")
                 {
+                    double DoubleFirstArgument = Convert.ToDouble(firstArgument.Text),
+               DoubleSecondArgument = Convert.ToDouble(secondArgument.Text);
                     resultField.Text =
                         calculator.Calculation(DoubleFirstArgument,
                             DoubleSecondArgument).ToString();
