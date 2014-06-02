@@ -2,7 +2,7 @@
 
 namespace Calc.SingleCalculators
 {
-    class cos : ISingleOperation
+    class Cos : ISingleOperation
     {
         public double Calculation(double firstArgument)
         {

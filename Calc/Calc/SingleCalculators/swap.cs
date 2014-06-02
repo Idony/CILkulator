@@ -1,10 +1,10 @@
 ﻿namespace Calc.SingleCalculators
 {
-    internal class swap : ISingleOperation
+    internal class Swap : ISingleOperation
     {
         public double Calculation(double firstArgument)
         {
-            double result = (firstArgument)*(-1);
+            double result = -1 * firstArgument;
             return result;
         }
     }

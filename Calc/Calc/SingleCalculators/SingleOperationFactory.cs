@@ -27,21 +27,21 @@ namespace Calc.SingleCalculators
                 case "sqrt^3":
                     return new Sqrt3();
                 case "lg":
-                    return new lg();
+                    return new Lg();
                 case "arctg":
-                    return new arctg();
+                    return new Arctg();
                 case "arcsin":
-                    return new arcsin();
+                    return new Arcsin();
                 case "ctg":
-                    return new ctg();
+                    return new Ctg();
                 case "arcctg":
-                    return new arcctg();
+                    return new Arcctg();
                 case "1/x":
                     return new Delx();
                 case "cos":
-                    return new cos();
+                    return new Cos();
                 case "+/-":
-                    return new swap();
+                    return new Swap();
                 default:
                     throw new ArgumentException("ПИШИ ПРАВИЛЬНО УВАСЯ!!", "calculatorName");
 

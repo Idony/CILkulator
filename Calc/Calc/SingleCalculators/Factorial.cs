@@ -10,7 +10,7 @@ namespace Calc.SingleCalculators
             {
                 throw new ArgumentException("Ошибка вводимых данных", "firstArgument");
             }
-            double result =1;
+            double result = 1;
             for (int i = 1; i <= firstArgument; i++)
             {
                 result *= i;

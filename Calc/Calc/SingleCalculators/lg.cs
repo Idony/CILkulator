@@ -2,7 +2,7 @@
 
 namespace Calc.SingleCalculators
 {
-    internal class lg : ISingleOperation
+    internal class Lg : ISingleOperation
     {
         public double Calculation(double firstArgument)
         {

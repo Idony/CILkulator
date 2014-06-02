@@ -10,7 +10,7 @@ namespace Calc.SingleCalculators
             {
                 throw new ArgumentException("Ошибка вводимых данных", "firstArgument");
             }
-            double result = 1/(firstArgument);
+            double result = 1 / firstArgument;
             return result;
         }
     }

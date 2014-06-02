@@ -2,11 +2,11 @@
 
 namespace Calc.SingleCalculators
 {
-    class ctg : ISingleOperation
+    internal class Ctg : ISingleOperation
     {
         public double Calculation(double firstArgument)
         {
-            double result = 1/Math.Tan(firstArgument);
+            double result = 1 / Math.Tan(firstArgument);
             return result;
         }
     }

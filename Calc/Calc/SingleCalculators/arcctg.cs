@@ -2,7 +2,7 @@
 
 namespace Calc.SingleCalculators
 {
-    class arcctg : ISingleOperation
+    class Arcctg : ISingleOperation
     {
         public double Calculation(double firstArgument)
         {

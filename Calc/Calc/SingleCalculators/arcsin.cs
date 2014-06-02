@@ -2,7 +2,7 @@
 
 namespace Calc.SingleCalculators
 {
-    class arcsin : ISingleOperation
+    class Arcsin : ISingleOperation
     {
         public double Calculation(double firstArgument)
         {
