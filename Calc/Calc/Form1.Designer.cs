@@ -141,7 +141,6 @@
             this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "Аргемент 2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // resultField
             // 

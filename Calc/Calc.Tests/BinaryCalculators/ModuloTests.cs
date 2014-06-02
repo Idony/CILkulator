@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Calc.BinaryCalculators;
 using NUnit.Framework;
 
@@ -18,6 +14,7 @@ namespace Calc.Tests.BinaryCalculators
             double result = calc.Calculation(2,2);
             Assert.AreEqual(result, 0);
         }
+
         [Test]
         public void ModuloTest2()
         {
@@ -26,5 +23,12 @@ namespace Calc.Tests.BinaryCalculators
             Assert.AreEqual(result, 0);
         }
 
+        [Test]
+        [ExpectedException(typeof(ArgumentException))]
+        public void DeviderTest3()
+        {
+            IBinaryOperation calc = BinaryOperationFactory.Create("mod");
+            double result = calc.Calculation(3, 0);
+        }
     }
 }

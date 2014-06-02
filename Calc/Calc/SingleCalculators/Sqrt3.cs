@@ -7,7 +7,7 @@ namespace Calc.SingleCalculators
         public double Calculation(double firstArgument)
         {
 
-            double result = Math.Pow(firstArgument, 1.0 / 3.0);
+            double result = Math.Pow(firstArgument, 1.0/3.0);
             return result;
         }
     }

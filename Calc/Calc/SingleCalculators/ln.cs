@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calc.SingleCalculators
 {
@@ -10,11 +6,11 @@ namespace Calc.SingleCalculators
     {
         public double Calculation(double firstArgument)
         {
-            if (firstArgument < 0 )
+            if (firstArgument <= 0)
             {
                 throw new ArgumentException("Ошибка вводимых данных", "firstArgument");
             }
-            double result = Math.Log(firstArgument,Math.E);
+            double result = Math.Log(firstArgument, Math.E);
             return result;
         }
     }

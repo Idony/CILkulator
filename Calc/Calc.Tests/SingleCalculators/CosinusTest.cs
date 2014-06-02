@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Calc.SingleCalculators;
 using NUnit.Framework;
 
@@ -18,6 +14,7 @@ namespace Calc.Tests.SingleCalculators
             double result = calc.Calculation(3.14);
             Assert.AreEqual(result, Math.Cos(3.14));
         }
+
         [Test]
         public void CosinusTest2()
         {

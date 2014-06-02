@@ -43,15 +43,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinaryCalculators\AdderTests.cs" />
-    <Compile Include="BinaryCalculators\Divider.cs" />
-    <Compile Include="BinaryCalculators\Exp.cs" />
-    <Compile Include="BinaryCalculators\Log.cs" />
-    <Compile Include="BinaryCalculators\Modulo.cs" />
-    <Compile Include="BinaryCalculators\Multiplier.cs" />
-    <Compile Include="BinaryCalculators\Power.cs" />
-    <Compile Include="BinaryCalculators\PowerSqrt.cs" />
-    <Compile Include="BinaryCalculators\Substracter.cs" />
-    <Compile Include="BinaryCalculators\S.cs" />
+    <Compile Include="BinaryCalculators\DividerTests.cs" />
+    <Compile Include="BinaryCalculators\ExpTests.cs" />
+    <Compile Include="BinaryCalculators\LogTests.cs" />
+    <Compile Include="BinaryCalculators\ModuloTests.cs" />
+    <Compile Include="BinaryCalculators\MultiplierTests.cs" />
+    <Compile Include="BinaryCalculators\PowerTests.cs" />
+    <Compile Include="BinaryCalculators\PowerSqrtTests.cs" />
+    <Compile Include="BinaryCalculators\SubstracterTests.cs" />
+    <Compile Include="BinaryCalculators\STests.cs" />
     <Compile Include="BinaryCalculators\RankTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SingleCalculators\ArccosTest.cs" />

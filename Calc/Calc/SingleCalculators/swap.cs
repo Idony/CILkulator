@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Calc.SingleCalculators
+﻿namespace Calc.SingleCalculators
 {
-    class swap : ISingleOperation
+    internal class swap : ISingleOperation
     {
         public double Calculation(double firstArgument)
         {

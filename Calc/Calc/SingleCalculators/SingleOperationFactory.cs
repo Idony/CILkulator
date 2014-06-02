@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calc.SingleCalculators
 {
@@ -42,7 +37,7 @@ namespace Calc.SingleCalculators
                 case "arcctg":
                     return new arcctg();
                 case "1/x":
-                    return new delx();
+                    return new Delx();
                 case "cos":
                     return new cos();
                 case "+/-":

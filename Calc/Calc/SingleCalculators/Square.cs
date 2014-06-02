@@ -4,7 +4,7 @@
     {
         public double Calculation(double firstArgument)
         {
-            double result = firstArgument * firstArgument;
+            double result = firstArgument*firstArgument;
             return result;
         }
     }

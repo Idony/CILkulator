@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 
 namespace Calc.Sorts
 {
@@ -8,8 +6,8 @@ namespace Calc.Sorts
     {
         public List<int> Sort(List<int> per)
         {
-            for(int i=0;i<per.Count-1;i++)
-                for (int j = 0; j < per.Count - i-1; j++)
+            for (int i = 0; i < per.Count - 1; i++)
+                for (int j = 0; j < per.Count - i - 1; j++)
                 {
                     if (per[j] > per[j + 1])
                     {

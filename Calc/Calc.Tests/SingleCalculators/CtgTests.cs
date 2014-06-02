@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Calc.SingleCalculators;
 using NUnit.Framework;
 
@@ -18,6 +14,7 @@ namespace Calc.Tests.SingleCalculators
             double result = calc.Calculation(2);
             Assert.AreEqual(result, 1/Math.Tan(2));
         }
+
         [Test]
         public void CtgTest2()
         {

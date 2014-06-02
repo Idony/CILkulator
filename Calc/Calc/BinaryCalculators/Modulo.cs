@@ -6,7 +6,7 @@ namespace Calc.BinaryCalculators
     {
         public double Calculation(double firstArgument, double secondArgument)
         {
-            if (secondArgument ==0)
+            if (secondArgument == 0)
             {
                 throw new ArgumentException("Ошибка вводимых данных", "secondArgument");
             }

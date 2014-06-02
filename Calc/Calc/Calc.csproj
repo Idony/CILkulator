@@ -61,7 +61,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="SingleCalculators\delx.cs" />
+    <Compile Include="SingleCalculators\Delx.cs" />
     <Compile Include="SingleCalculators\cos.cs" />
     <Compile Include="SingleCalculators\swap.cs" />
     <Compile Include="Sorts\ISort.cs" />

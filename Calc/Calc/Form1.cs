@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calc.BinaryCalculators;
 using Calc.SingleCalculators;
 using Calc.Sorts;
-using Microsoft.Win32;
 
 namespace Calc
 {
@@ -21,46 +15,34 @@ namespace Calc
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Calculate(object sender, EventArgs e)
         {
-           
             try
             {
                 IBinaryOperation calculator = BinaryOperationFactory.Create(((Button) sender).Text);
                 if (firstArgument.Text != "" && secondArgument.Text != "")
                 {
-                    double DoubleFirstArgument = Convert.ToDouble(firstArgument.Text),
-               DoubleSecondArgument = Convert.ToDouble(secondArgument.Text);
-                    resultField.Text =
-                        calculator.Calculation(DoubleFirstArgument,
-                            DoubleSecondArgument).ToString();
+                    double doubleFirstArgument = Convert.ToDouble(firstArgument.Text);
+                    double doubleSecondArgument = Convert.ToDouble(secondArgument.Text);
+                    resultField.Text = calculator.Calculation(doubleFirstArgument, doubleSecondArgument).ToString();
                 }
             }
             catch (Exception exception)
             {
                 resultField.Text = exception.Message;
             }
-            
         }
 
         private void SimpleCalculate(object sender, EventArgs e)
         {
-            double DoubleFirstArgument = Convert.ToDouble(firstArgument.Text);
+            double doubleFirstArgument = Convert.ToDouble(firstArgument.Text);
             try
             {
                 ISingleOperation calculator = SingleOperationFactory.Create(((Button) sender).Text);
                 if (firstArgument.Text != "")
-                    resultField.Text = calculator.Calculation(DoubleFirstArgument).ToString();
+                {
+                    resultField.Text = calculator.Calculation(doubleFirstArgument).ToString();
+                }
             }
             catch (Exception exception)
             {
@@ -82,12 +64,7 @@ namespace Calc
             {
                 resultField.Text = exception.Message;
             }
-
         }
-
-        
-
-
     }
 }
 

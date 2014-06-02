@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calc.SingleCalculators
 {
-    class delx : ISingleOperation
+    class Delx : ISingleOperation
     {
         public double Calculation(double firstArgument)
         {
-            if (firstArgument==0)
+            if (firstArgument == 0)
             {
                 throw new ArgumentException("Ошибка вводимых данных", "firstArgument");
             }
